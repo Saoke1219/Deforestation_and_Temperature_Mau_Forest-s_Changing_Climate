@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7b58ece49f23cfbc88b30a0bd314b5b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7b58ece49f23cfbc88b30a0bd314b5b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7b58ece49f23cfbc88b30a0bd314b5b = L.map(
+                "map_c7b58ece49f23cfbc88b30a0bd314b5b",
+                {
+                    center: [0.0236, 37.9062],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_423daaab774f53c92c36b2eab5468039 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_423daaab774f53c92c36b2eab5468039.addTo(map_c7b58ece49f23cfbc88b30a0bd314b5b);
+        
+    
+            var marker_c5a3fd79f453ee6165b30f754541e2a2 = L.marker(
+                [0.2827, 34.7519],
+                {}
+            ).addTo(map_c7b58ece49f23cfbc88b30a0bd314b5b);
+        
+    
+            var icon_e2cb518c863203dbf9fb9bd60bb56905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree-conifer", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5a3fd79f453ee6165b30f754541e2a2.setIcon(icon_e2cb518c863203dbf9fb9bd60bb56905);
+        
+    
+        var popup_078279b45e573f12fa46992f2b529b2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c65e33566e49645a24ab3abbb466fb = $(`<div id="html_97c65e33566e49645a24ab3abbb466fb" style="width: 100.0%; height: 100.0%;">Kakamega Forest</div>`)[0];
+                popup_078279b45e573f12fa46992f2b529b2b.setContent(html_97c65e33566e49645a24ab3abbb466fb);
+            
+        
+
+        marker_c5a3fd79f453ee6165b30f754541e2a2.bindPopup(popup_078279b45e573f12fa46992f2b529b2b)
+        ;
+
+        
+    
+    
+            var marker_e112a4d1120ed07b495ee0dc8863d55a = L.marker(
+                [-0.5257, 35.6046],
+                {}
+            ).addTo(map_c7b58ece49f23cfbc88b30a0bd314b5b);
+        
+    
+            var icon_c95997e4160c00a71270161006763434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree-conifer", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e112a4d1120ed07b495ee0dc8863d55a.setIcon(icon_c95997e4160c00a71270161006763434);
+        
+    
+        var popup_38ff3be8c951c2237d1c8b07f556d71d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80bbef00ce2c3eb4cc46a684eb2ad8c5 = $(`<div id="html_80bbef00ce2c3eb4cc46a684eb2ad8c5" style="width: 100.0%; height: 100.0%;">Mau Forest</div>`)[0];
+                popup_38ff3be8c951c2237d1c8b07f556d71d.setContent(html_80bbef00ce2c3eb4cc46a684eb2ad8c5);
+            
+        
+
+        marker_e112a4d1120ed07b495ee0dc8863d55a.bindPopup(popup_38ff3be8c951c2237d1c8b07f556d71d)
+        ;
+
+        
+    
+    
+            var marker_a36969db8663bccbae6b490b34ce49b6 = L.marker(
+                [-0.4167, 36.6833],
+                {}
+            ).addTo(map_c7b58ece49f23cfbc88b30a0bd314b5b);
+        
+    
+            var icon_1be1690833d302b8188e8680965fc42a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree-conifer", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a36969db8663bccbae6b490b34ce49b6.setIcon(icon_1be1690833d302b8188e8680965fc42a);
+        
+    
+        var popup_18401e6d4f8d92fd8e3cf4866b81daa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78b94258787361702bdb136aed4f3a8d = $(`<div id="html_78b94258787361702bdb136aed4f3a8d" style="width: 100.0%; height: 100.0%;">Aberdare Forest</div>`)[0];
+                popup_18401e6d4f8d92fd8e3cf4866b81daa4.setContent(html_78b94258787361702bdb136aed4f3a8d);
+            
+        
+
+        marker_a36969db8663bccbae6b490b34ce49b6.bindPopup(popup_18401e6d4f8d92fd8e3cf4866b81daa4)
+        ;
+
+        
+    
+    
+            var marker_ef4057d2c8328e7096ea637a108a238c = L.marker(
+                [0.1521, 37.3084],
+                {}
+            ).addTo(map_c7b58ece49f23cfbc88b30a0bd314b5b);
+        
+    
+            var icon_e6dc433fe23c462a76977452e6eb0a9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree-conifer", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef4057d2c8328e7096ea637a108a238c.setIcon(icon_e6dc433fe23c462a76977452e6eb0a9f);
+        
+    
+        var popup_38a89887cb8710c22a5b8df0f567e045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00ddded09260927d1989ce7bb00395b1 = $(`<div id="html_00ddded09260927d1989ce7bb00395b1" style="width: 100.0%; height: 100.0%;">Mt. Kenya Forest</div>`)[0];
+                popup_38a89887cb8710c22a5b8df0f567e045.setContent(html_00ddded09260927d1989ce7bb00395b1);
+            
+        
+
+        marker_ef4057d2c8328e7096ea637a108a238c.bindPopup(popup_38a89887cb8710c22a5b8df0f567e045)
+        ;
+
+        
+    
+</script>
+</html>

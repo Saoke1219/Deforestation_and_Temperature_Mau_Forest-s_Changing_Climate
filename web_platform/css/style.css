@@ -1,0 +1,575 @@
+/* common style bebinning */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+:root {
+    --themegreen: #5f603b;
+    --green: #8a8d56;
+    --gray: #efefef;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button, 
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullcontainer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themegreen);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themegreen);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section{
+    padding: 0px 0;
+    position: relative;
+}
+
+/* common style end */
+
+/* home style start */
+
+/* logo position style  start*/
+.logo-container {
+    position: fixed; 
+    top: 0px; 
+    left: 0px; 
+    z-index: 3;
+    padding: 10px;
+    background-color: transparent;
+    top: 0;
+    transition: top 0.3s ease;
+}
+
+.logo-container img {
+    height: 150px;
+    width: auto;
+}
+
+/* logo position style  end*/
+
+header {
+    width: 75%;
+    background-color: var(--green);
+    position: fixed;
+    z-index: 2;
+    left: 25%;
+    top: 0;
+    transition: top 0.3s ease-in-out;/* control the transition when hiding the header*/
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themegreen);
+    transform: scale(1.05);
+}
+/* Styles for the Donate Now button */
+header nav ul li a button#donateButton {
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect for the Donate Now button */
+header nav ul li a button#donateButton:hover {
+    background-color: var(--themegreen);
+    transform: scale(1.05);
+}
+/* dropdown menu*/
+/* Hover effect for the links */
+/* Styling individual dropdown items */
+nav ul li .dropdown li {
+    display: block; /* Ensure dropdown items take up the full width */
+}
+/* Dropdown menu - hidden by default */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+    width: auto; /* Ensure dropdown width is based on content */
+    z-index: 1;
+    border-radius: 5px; 
+}
+nav ul li a:hover {
+    background-color: var(--themegreen);
+}
+/* Display dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Styling individual dropdown items */
+nav ul li .dropdown li {
+    display: block;
+    background-color: var(--green);
+    width: auto;
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span {
+    background-color: var(--themegreen);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.join-us-btn {
+    display: inline-block;
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.join-us-btn:hover {
+    background-color: var(--themegreen);
+}
+
+/* about section style starts here */
+.about-section .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+/* Row container to clear floats */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Column setup for side by side images */
+.column {
+    float: left;
+    width: 50%; 
+    padding: 5px;
+    position: relative; 
+}
+
+/* Specific styling for the image to overlap */
+.overlap-image {
+    position: relative;
+    z-index: 2; 
+    margin-left: -75px; 
+    margin-top: 68px; 
+    transform: translateX(30px);
+}
+
+/* Image styling within columns */
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Text content styling on top of the overlapping image */
+.overlap-image .text-content {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.overlap-image .text-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Styling for the Learn More button */
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #8B4513; 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #5F3010; 
+}
+
+/* Container for cards */
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    gap: 20px; /* Adds space between the cards */
+    position: relative;
+}
+
+/* Individual card styling */
+#aboutSection .cards > div {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive, 3 cards per row with gap */
+    background-color: var(--gray);
+    padding: 35px;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on cards */
+#aboutSection .cards > div:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    padding: 35px; /* Ensure consistent padding */
+}
+
+/* Title styling */
+#aboutSection .cards > div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Paragraph styling */
+#aboutSection .cards > div p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Button styles */
+#aboutSection .cards .donate-btn,
+#aboutSection .cards .projects-btn,
+#aboutSection .cards .blog-btn {
+    display: inline-block;
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+#aboutSection .cards .donate-btn:hover,
+#aboutSection .cards .projects-btn:hover,
+#aboutSection .cards .blog-btn:hover {
+    background-color: var(--themegreen);
+}
+
+
+
+/* gallery starts here */
+
+
+.projects .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.projects .boxContainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.projects .boxContainer .box .cardImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.projects .boxContainer .box .cardImage:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: top 0.4s ease, filter 0.4s ease;
+    z-index: 1; /* Ensure the pseudo-element is on top */
+}
+
+.projects .boxContainer .box:nth-child(1) .cardImage,
+.projects .boxContainer .box:nth-child(1) .cardImage:after {
+    background-image: url("../images/gallery/seedling.jpg");
+}
+
+.projects .boxContainer .box:nth-child(2) .cardImage,
+.projects .boxContainer .box:nth-child(2) .cardImage:after {
+    background-image: url("../images/gallery/image_2.jpg");
+}
+
+.projects .boxContainer .box:nth-child(3) .cardImage,
+.projects .boxContainer .box:nth-child(3) .cardImage:after {
+    background-image: url("../images/gallery/jembe.jpg");
+}
+
+.projects .boxContainer .box:nth-child(4) .cardImage,
+.projects .boxContainer .box:nth-child(4) .cardImage:after {
+    background-image: url("../images/gallery/iStock-1282629773.jpg");
+}
+
+.projects .boxContainer .box:hover .cardImage:after {
+    top: 100%; /* Move the pseudo-element out of view */
+    filter: grayscale(0%); /* Remove the grayscale filter on hover */
+}
+
+.projects .boxContainer .box .projectTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.projects .boxContainer .box .donationcount {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #444;
+} 
+
+.projects .boxContainer .box .donationcount span{
+    color: var(--themegreen);
+}
+
+.projects .boxContainer .box button {
+    position: absolute;
+    left: 50%;
+    background-color: var(--themegreen);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*gallery section ends here */
+
+/*donate section starts here */
+
+.donation {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.donation .videoPlayer {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+/*donate section ends here */
+
+/*footer starts here */
+footer {
+    background-color: #181818;
+    color: #7f7f7f;
+    padding:  0;
+    font-size: 14px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 50px;
+}
+
+footer .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .LinksContainer ul {
+    list-style-type: none;
+}
+
+footer .LinksContainer ul li a{
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .newsLetterContainer img {
+    height: 100px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+/* footer end here */
+/* media respinsive begins here */
+/* Media responsiveness begins here */
+
+/* For screen widths 1140px and below */
+
+
+
+
+/* Media responsiveness ends here */
